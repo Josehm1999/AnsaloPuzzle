@@ -14,14 +14,6 @@ const botones = {
   jButton: document.getElementById("jButton"),
 };
 
-const letras = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
-const numeros = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
-
-
-letras.forEach((letra)=> 
-  
-)
-
 for (const boton in botones) {
   botones[boton].onclick = () => {
     if (
@@ -44,7 +36,7 @@ for (const boton in botones) {
       botones[boton].innerHTML[0] == "D"
     ) {
       divLetras.innerHTML += botones[boton].innerHTML[0];
-    } else if ( 
+    } else if (
       divLetras.innerHTML[divLetras.innerHTML.length - 1] == "D" &&
       botones[boton].innerHTML[0] == "E"
     ) {
